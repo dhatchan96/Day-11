@@ -1,0 +1,18 @@
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  .rating > label {
+    display: inline;
+    color: #ffc107;
+    cursor: pointer;
+  }
+  .rating > input {
+    display: none;
+  }
+  .rating > label:hover,
+  .rating > input:checked ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ label {
+    color: #ffca28;
+  }
